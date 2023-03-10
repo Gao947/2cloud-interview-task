@@ -1,0 +1,21 @@
+.banner-item {
+    margin-right: 50px;
+}
+
+.bannerpre {
+    background-color: #e7e7e8;
+    padding: 12px 0 11px;
+}
+
+.banner-text {
+    margin-top: 7px;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.banner-icon {
+    color: blue;
+    margin-right: 8px;
+}
