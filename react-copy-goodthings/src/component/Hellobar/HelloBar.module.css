@@ -1,0 +1,11 @@
+.Hellobar {
+    background-color: #f7f700;
+    padding: 7px 0 6px;
+}
+
+.text {
+    text-align: center;
+    color: black;
+    font-size: 1.6em;
+    line-height: 1.3em;
+}

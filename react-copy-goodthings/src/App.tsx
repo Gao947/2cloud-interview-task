@@ -1,8 +1,9 @@
+import HelloBar from './component/Hellobar/HelloBar';
 
 function App() {
   return (
     <div>
-      Hello World
+      <HelloBar />
     </div>
   );
 }
