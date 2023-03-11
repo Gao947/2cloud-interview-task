@@ -1,0 +1,44 @@
+.header-bar {
+    background-color: #214fff;
+}
+
+#brand-logo {
+    max-width: 240px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    /* float: left !important; */
+}
+
+#google-logo {
+    max-width: 240px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    /* float: left !important; */
+}
+
+#google-bar {
+    text-align: right;
+}
+
+#stars {
+    font-size: 17px;
+    color: gold;
+}
+
+#review-count {
+    font-weight: 700;
+    font-size: 13px;
+    padding-right: 0;
+    color: white;
+    display: flex;
+}
+
+#searchbar-button {
+    background-color: #a7d2cd;
+    color: #3c4858;
+    font-weight: bold;
+}
+
+#search-bar {
+    margin: 5px;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import styles from "./BannerPre.module.css";
 import { GlobeAsiaAustralia, Amd, Rocket, Lightbulb, Telephone } from 'react-bootstrap-icons';
 
