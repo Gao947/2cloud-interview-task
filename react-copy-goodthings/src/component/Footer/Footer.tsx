@@ -6,7 +6,7 @@ import brandlogo from "../../img/logo-white.svg";
 
 function FooterComponent() {
     return (
-        <div>
+        <div className={styles['footer-body']}>
             <Container className={styles['footer-container']}>
                 <Row>
                     <a href="https://goodthings.com.au/">
