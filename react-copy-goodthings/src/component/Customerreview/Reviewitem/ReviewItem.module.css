@@ -1,0 +1,41 @@
+.card-google-logo {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+
+}
+
+.review-card-title {
+    display: block!important;
+    font-size: 100%!important;
+    font-weight: 700!important;
+    color: #427fed!important;
+
+}
+
+.review-card-subtitle-star {
+    color: #e7711b!important;
+    margin: 0 4px 0 0!important;
+}
+
+.review-card-subtitle-time {
+    display: block!important;
+    color: #999!important;
+    font-size: 13px!important;
+    text-shadow: 1px 1px 0 #fff!important;
+}
+
+.review-card-text {
+    display: block;
+    color: #777!important;
+    font: inherit!important;
+    font-size: 13px!important;
+    line-height: 18px!important;
+}
+
+.review-body {
+    height: 100%;
+    max-height: 270px;
+    overflow: auto;
+    margin: 0 6px 12px!important;
+}
