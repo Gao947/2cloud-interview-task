@@ -2,7 +2,7 @@
     background-color: #99999b;
 }
 
-#navbar-button {
+#navbar-item {
     background-color: #99999b;
     color: white;
     text-transform: uppercase;
@@ -11,4 +11,17 @@
 
 .dropdown-toggle::after {
     display: none;
+}
+
+.navbar-button {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 260px;
+    padding-top: 40px;
+    line-height: 1.3;
+    text-transform: none;
+    color: rgba(0,0,0,.6);
+    text-align: left;
 }
