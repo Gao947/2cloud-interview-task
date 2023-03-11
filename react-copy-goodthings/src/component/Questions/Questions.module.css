@@ -1,0 +1,36 @@
+.question-body {
+background-color: #f8f9fa;
+padding: 100px;
+}
+
+.question-title {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    color: #214fff;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.question-text {
+    font-weight: 400;
+    color: #3c4858;
+    font-family: HurmeGeometricSans2,Helvetica,Arial,sans-serif;
+    line-height: 1.5;
+    text-align: left;
+    font-size: 1.4rem;
+    margin-block-end: 2em;
+}
+
+.question-content-title {
+    display: block;
+    text-align: left;
+    color: #214fff;
+    background-color: #fff;
+    margin:4px;
+    font-family: HurmeGeometricSans2,Helvetica,Arial,sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
