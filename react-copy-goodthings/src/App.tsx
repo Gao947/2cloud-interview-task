@@ -4,6 +4,7 @@ import FooterComponent from './component/Footer/Footer';
 import HeaderBar from './component/Headerbar/HeaderBar';
 import HelloBar from './component/Hellobar/HelloBar';
 import NavBar from './component/Navbar/NavBar';
+import ProductSwatchComponent from './component/Productswatch/ProductSwatch';
 import QuestionComponent from './component/Questions/Questions';
 import SwitchTabComponent from './component/Switchtab/SwitchTab';
 
@@ -20,6 +21,7 @@ function App() {
         <CarouselComponent />
         <SwitchTabComponent/>
 
+        <ProductSwatchComponent />
         <QuestionComponent />
       </div>
       <div>
