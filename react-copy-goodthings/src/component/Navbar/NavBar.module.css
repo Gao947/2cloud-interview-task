@@ -1,0 +1,14 @@
+.navbar {
+    background-color: #99999b;
+}
+
+#navbar-button {
+    background-color: #99999b;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}

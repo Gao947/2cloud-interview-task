@@ -1,6 +1,7 @@
 import BannerPre from './component/Bannerpre/BannerPre';
 import HeaderBar from './component/Headerbar/HeaderBar';
 import HelloBar from './component/Hellobar/HelloBar';
+import NavBar from './component/Navbar/NavBar';
 
 function App() {
   return (
@@ -11,6 +12,9 @@ function App() {
       <BannerPre />
 
       <HeaderBar />
+
+      <NavBar />
+
 
     </div>
   );
