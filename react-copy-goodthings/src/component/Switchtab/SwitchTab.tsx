@@ -35,6 +35,7 @@ function SwitchTabComponent() {
     <div ref={sliderRef} className="keen-slider">
       <div className="keen-slider__slide number-slide1">
       <Image id={styles['switch-img-container']} src={lp1} />
+      <span id={styles['switch-img-tag']}>New arrival</span>
       <span>NSW Touch Football Bilk Shorts</span>
       <span>from$31.8</span> <span>Min Qty: 1</span>
       </div>
