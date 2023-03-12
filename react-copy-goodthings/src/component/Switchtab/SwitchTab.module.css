@@ -1,6 +1,8 @@
 .swatch-tab-body {
     padding: 70px;
+    background-color: #f6f6f6;
 }
+
 .switch-tab {
     height: 50px;
     display: inline-block;
@@ -15,4 +17,13 @@
     color: #3c4858;
     font-size: large;
     font-weight: bold;
+}
+
+#switch-img-container {
+    height: 280px;
+    width: 280px;
+    background-color: white;
+    position: relative;
+    width: 100%;
+    margin: 8px;
 }
