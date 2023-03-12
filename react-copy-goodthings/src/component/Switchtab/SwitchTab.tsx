@@ -5,12 +5,10 @@ import Tabs from 'react-bootstrap/Tabs';
 
 function SwitchTabComponent() {
   return (
-    <Container>
+    <Container className={styles['swatch-tab-body']}>
       <Tabs
         defaultActiveKey="profile"
-        id={styles['switch-tab-text']}
-        className="mb-3"
-        fill
+        className={styles['switch-tab-text']}
       >
         <Tab eventKey="lastest" title="Latest Products">
           Latest Products

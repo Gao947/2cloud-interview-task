@@ -1,3 +1,6 @@
+.swatch-tab-body {
+    padding: 70px;
+}
 .switch-tab {
     height: 50px;
     display: inline-block;
@@ -7,8 +10,9 @@
     border-radius: 3px 3px 0 0;
 }
 
-#switch-tab-text {
-    color: rgba(60,72,88,.8);
-    font-size: 1.7rem;
-    font-weight: 600;
+.switch-tab-text {
+    background: #c9e990;
+    color: #3c4858;
+    font-size: large;
+    font-weight: bold;
 }
