@@ -1,4 +1,4 @@
-import { Container } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import styles from "./SwitchTab.module.css";
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
@@ -14,13 +14,12 @@ import lp6 from "../../img/LP6.webp";
 import lp7 from "../../img/LP7.webp";
 import lp8 from "../../img/LP8.webp";
 
-
 function SwitchTabComponent() {
 
   const [sliderRef] = useKeenSlider({
     slides: {
       perView: 4,
-      spacing: 8,
+      spacing: 20,
     },
   })
 
@@ -30,51 +29,39 @@ function SwitchTabComponent() {
       <Tabs
         defaultActiveKey="profile"
         className={styles['switch-tab-text']}
+
       >
         <Tab eventKey="lastest" title="Latest Products">
-    <div ref={sliderRef} className="keen-slider">
-      <div className="keen-slider__slide number-slide1">
-      <Image id={styles['switch-img-container']} src={lp1} />
-      <span id={styles['switch-img-tag']}>New arrival</span>
-      <span>NSW Touch Football Bilk Shorts</span>
-      <span>from$31.8</span> <span>Min Qty: 1</span>
-      </div>
-      <div className="keen-slider__slide number-slide2">
-      <Image id={styles['switch-img-container']} src={lp2} />
-      <span>NSW Touch Football Bilk Shorts</span>
-      <span>from$31.8</span> <span>Min Qty: 1</span>
-      </div>
-      <div className="keen-slider__slide number-slide3">
-      <Image id={styles['switch-img-container']} src={lp3} />
-      <span>NSW Touch Football Bilk Shorts</span>
-      <span>from$31.8</span> <span>Min Qty: 1</span>
-      </div>
-      <div className="keen-slider__slide number-slide4">
-      <Image id={styles['switch-img-container']} src={lp4} />
-      <span>NSW Touch Football Bilk Shorts</span>
-      <span>from$31.8</span> <span>Min Qty: 1</span>
-      </div>
-      <div className="keen-slider__slide number-slide5">
-      <Image id={styles['switch-img-container']} src={lp5} />
-      <span>NSW Touch Football Bilk Shorts</span>
-      <span>from$31.8</span> <span>Min Qty: 1</span>
-      </div>
-      <div className="keen-slider__slide number-slide6">
-      <Image id={styles['switch-img-container']} src={lp6} />
-      <span>NSW Touch Football Bilk Shorts</span>
-      <span>from$31.8</span> <span>Min Qty: 1</span>
-      </div>
-      <div className="keen-slider__slide number-slide6">
-      <Image id={styles['switch-img-container']} src={lp7} />
-      <span>NSW Touch Football Bilk Shorts</span>
-      <span>from$31.8</span> <span>Min Qty: 1</span>
-      </div>
-      <div className="keen-slider__slide number-slide6">
-      <Image id={styles['switch-img-container']} src={lp8} />
-      <span>NSW Touch Football Bilk Shorts</span>
-      <span>from$31.8</span> <span>Min Qty: 1</span>
-      </div>
-    </div>
+        <div ref={sliderRef} className="keen-slider">
+
+<div className="keen-slider__slide number-slide1">
+<Image id={styles['switch-img-container']} src={lp1} />
+<span id={styles['switch-img-tag']}>New arrival</span>
+<Row>
+<span id={styles['switch-product-name']}>NSW Touch Football Bilk Shorts</span>
+</Row>
+<Row>
+<span id={styles['switch-product-pricerange']}>from</span> 
+<span id={styles['switch-product-price']}>$31.8</span> 
+<span id={styles['switch-product-quantity']}>Min Qty: 1</span>
+</Row>
+</div>
+<div className="keen-slider__slide number-slide2">
+<Image id={styles['switch-img-container']} src={lp2} />
+<span>NSW Touch Football Bilk Shorts</span>
+<span>from$31.8</span> <span>Min Qty: 1</span>
+</div>
+<div className="keen-slider__slide number-slide3">
+<Image id={styles['switch-img-container']} src={lp3} />
+<span>NSW Touch Football Bilk Shorts</span>
+<span>from$31.8</span> <span>Min Qty: 1</span>
+</div>
+<div className="keen-slider__slide number-slide4">
+<Image id={styles['switch-img-container']} src={lp4} />
+<span>NSW Touch Football Bilk Shorts</span>
+<span>from$31.8</span> <span>Min Qty: 1</span>
+</div>
+</div>
         </Tab>
 
         <Tab eventKey="sellers" title="Best Sellers">
