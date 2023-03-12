@@ -2,12 +2,59 @@
     background-color: #f1c643;
 }
 
+#first-slice-caption {
+    position: absolute;
+    right: 0px;
+    top: 170px;
+    color: #cd942d;
+    font-size: 2.8rem;
+    line-height: 0.8;
+    font-weight: bold;
+}
+
 #second-slide {
     background-color: #2C89C3;
 }
 
+#second-slice-caption {
+    position: absolute !important;
+    left: 0px;
+    top: 160px;
+    color: white;
+    font-size: 2.8rem;
+    line-height: 0.8;
+    font-weight: bold;
+}
+
+#second-slice-button {
+    text-transform: uppercase;
+    border: none;
+    font-weight: bold;
+    color: white;
+}
+
 #third-slide {
     background-color: #CFC3EB;
+}
+
+#third-slice-caption {
+    position: absolute !important;
+    left: 0px;
+    top: 180px;
+    color: black;
+    text-align: center;
+    font-size: 2.8rem;
+    line-height: 0.8;
+    font-weight: bold;
+}
+
+#third-slice-button {
+    background-color: #9262B0;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    text-align: center;
 }
 
 #fourth-slide {

@@ -1,4 +1,4 @@
-import { Container } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
 import styles from "./Carousel.module.css";
 import Carousel from 'react-bootstrap/Carousel';
 import carousel1 from "../../img/slider-yellow-chair.webp";
@@ -19,12 +19,13 @@ function CarouselComponent() {
               src={carousel1}
               alt="First slide"
             />
-            <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <Carousel.Caption id={styles['first-slice-caption']}>
+              <p>Australis's Favourite</p>
+              <p>Brandable Products</p>
             </Carousel.Caption>
             </Container>
           </Carousel.Item>
+
           <Carousel.Item id={styles['second-slide']} className={styles['wide-screen-slide']}>
           <Container>
             <img
@@ -32,13 +33,14 @@ function CarouselComponent() {
               src={carousel2}
               alt="Second slide"
             />
-
-            <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <Carousel.Caption id={styles['second-slice-caption']}>
+              <p>Browse our</p>
+              <p>Custom Products</p>
+              <Button id={styles['second-slice-button']}>View our portfolio</Button>
             </Carousel.Caption>
             </Container>
           </Carousel.Item>
+
           <Carousel.Item id={styles['third-slide']} className={styles['wide-screen-slide']}>
           <Container>
             <img
@@ -47,11 +49,11 @@ function CarouselComponent() {
               alt="Third slide"
             />
 
-            <Carousel.Caption>
-              <h3>Third slide label</h3>
+            <Carousel.Caption id={styles['third-slice-caption']}>
               <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+                Create your perfect pair
               </p>
+              <Button id={styles['third-slice-button']}>Try our sook selector</Button>
             </Carousel.Caption>
             </Container>
           </Carousel.Item>
@@ -63,13 +65,6 @@ function CarouselComponent() {
               src={carousel4}
               alt="Fourth slide"
             />
-
-            <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
-            </Carousel.Caption>
             </Container>
           </Carousel.Item>
 
