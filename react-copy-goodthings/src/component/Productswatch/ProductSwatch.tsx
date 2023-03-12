@@ -21,26 +21,33 @@ function ProductSwatchComponent() {
         <div>
             <Container>
                 <Row>
-                <h2 className={styles['swatch-title']}>
-                Our Brandable Products
-          </h2>
+                    <h2 className={styles['swatch-title']}>
+                        Our Brandable Products
+                    </h2>   
                 </Row>
 
                 <Row>
                     <Row>
-                        <Col>
-                        <MDBRipple
-      className='bg-image hover-overlay shadow-1-strong rounded'
-      rippleTag='div'
-      rippleColor='strong'
-    >
-      <img alt="book" className='w-100' src={productswatch1} />
-      <a href='https://goodthings.com.au/product-category/stationery/'>
-        <div className='mask' style={{ backgroundColor: 'rgba(0,0,0, 0.2)' }}></div>
-      </a>
-    </MDBRipple>
-                        </Col>
-                        <Col>
+                        <Col xl="6">
+                            <div className={styles['container']}>
+                                <Image className={styles['image']} src={productswatch1} />
+                                <div className={styles['original-text-container']}>
+                                    <div className={styles['original-text']}>original-text</div>
+                                </div>
+                                <div className={styles['middle']}>
+                                    <div className={styles['hover-show-text']} >John Doe</div>
+                                </div>
+                            </div>
+                        </Col> 
+
+                            {/* <a href="https://goodthings.com.au/product-category/stationery/">
+                                <Image id={styles['swatch-product-book']} src={productswatch1} />
+                            </a>
+                            <div className="middle">
+                                <div className="text">John Doe</div>
+                            </div> */}
+                        
+                        <Col xl="6">
                             <Row>
                                 <Col>
                                     <a href="https://goodthings.com.au/product-category/promotional-bags/">
@@ -68,7 +75,7 @@ function ProductSwatchComponent() {
                         </Col>
                     </Row>
                     <Row>
-                        <Col>
+                        <Col xl="6">
                             <Row>
                                 <Col>
                                     <a href="https://goodthings.com.au/product-category/promotional-bags/">
@@ -94,7 +101,7 @@ function ProductSwatchComponent() {
                                 </Col>
                             </Row>
                         </Col>
-                        <Col className={styles['swatch-product-col']}>
+                        <Col xl="6" className={styles['swatch-product-col']}>
                             <a href="https://goodthings.com.au/product-category/promotional-bags/">
                                 <Image id={styles['swatch-product-hat']} src={productswatch4} />
                             </a>

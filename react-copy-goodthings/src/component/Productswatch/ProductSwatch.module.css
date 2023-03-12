@@ -3,8 +3,8 @@
     padding-right: 0;
 }
 
-#swatch-product-book {
-    width: 100;
+/* #swatch-product-book {
+    width: 610px;
     margin-top: 7px;
     margin-bottom: 7px;
     margin-left: 7px;
@@ -12,7 +12,83 @@
     position: relative;
     display: block;
     float: right !important;
+    
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+} */
+
+.container {
+    background-color: black;
+    position: relative;
+    width: 100%;
 }
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.original-text-container {
+    transition: .5s ease;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.original-text {
+    color: white;
+    font-size: 35px;
+}
+
+.container:hover .image {
+    opacity: 0.3;
+}
+  
+.container:hover .middle {
+    opacity: 1;
+}
+
+.container:hover .original-text-container {
+    opacity: 0;
+}
+  
+.hover-show-text {
+    color: white;
+    font-size: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 #swatch-product-hat {
     width: 610px;
