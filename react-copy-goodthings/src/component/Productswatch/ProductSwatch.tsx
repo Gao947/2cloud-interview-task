@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import styles from "./ProductSwatch.module.css";
 import Image from 'react-bootstrap/Image';
+import { MDBRipple } from 'mdb-react-ui-kit';
 
 import productswatch1 from "../../img/good-notepads-1.webp";
 import productswatch21 from "../../img/good-bags.webp";
@@ -28,9 +29,16 @@ function ProductSwatchComponent() {
                 <Row>
                     <Row>
                         <Col>
-                            <a href="https://goodthings.com.au/product-category/stationery/">
-                                <Image alt="book" id={styles['swatch-product-book']} src={productswatch1} />
-                            </a>
+                        <MDBRipple
+      className='bg-image hover-overlay shadow-1-strong rounded'
+      rippleTag='div'
+      rippleColor='strong'
+    >
+      <img alt="book" className='w-100' src={productswatch1} />
+      <a href='https://goodthings.com.au/product-category/stationery/'>
+        <div className='mask' style={{ backgroundColor: 'rgba(0,0,0, 0.2)' }}></div>
+      </a>
+    </MDBRipple>
                         </Col>
                         <Col>
                             <Row>
