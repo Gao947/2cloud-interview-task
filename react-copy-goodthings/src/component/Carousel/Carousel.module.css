@@ -1,0 +1,21 @@
+#first-slide {
+    background-color: #f1c643;
+}
+
+#second-slide {
+    background-color: #2C89C3;
+}
+
+#third-slide {
+    background-color: #CFC3EB;
+}
+
+#fourth-slide {
+    background-color: #9bcbe7;
+}
+
+.wide-screen-slide {
+    background-size: auto 100%;
+    width: 100%;
+    height: 500px;
+}
