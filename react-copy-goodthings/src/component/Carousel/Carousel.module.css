@@ -28,6 +28,7 @@
 
 #second-slice-button {
     text-transform: uppercase;
+    border-radius: 17px;
     border: none;
     font-weight: bold;
     color: white;
@@ -50,6 +51,7 @@
 
 #third-slice-button {
     background-color: #9262B0;
+    border-radius: 17px;
     border: none;
     text-transform: uppercase;
     font-weight: bold;
