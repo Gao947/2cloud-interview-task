@@ -2,134 +2,19 @@
     padding: 20px;
 }
 
-.swatch-product-col {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-/* #swatch-product-book {
-    width: 610px;
-    margin-top: 7px;
-    margin-bottom: 7px;
-    margin-left: 7px;
-    margin-right: 7px;
-    position: relative;
-    display: block;
-    float: right !important;
-    
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-} */
-
-.container {
-    background-color: black;
-    position: relative;
-    width: 100%;
-}
-
-.image {
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-}
-
-.middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.original-text-container {
-    transition: .5s ease;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.original-text {
-    color: white;
-    font-size: 35px;
-}
-
-.container:hover .image {
-    opacity: 0.3;
-}
-  
-.container:hover .middle {
-    opacity: 1;
-}
-
-.container:hover .original-text-container {
-    opacity: 0;
-}
-  
-.hover-show-text {
-    color: white;
-    font-size: 35px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-#swatch-product-hat {
-    width: 610px;
-    margin-top: 7px;
-    margin-bottom: 7px;
-    margin-left: 7px;
-    margin-right: 7px;
-    position: relative;
-    display: block;
-    float: left !important;
-}
-
-.swatch-product-s-left {
-    max-width: 290px;
-    margin-top: 7px;
-    margin-bottom: 7px;
-    margin-left: 7px;
-    padding: 0;
-    float: right !important;
-}
-
-.swatch-product-s-right {
-    max-width: 290px;
-    margin-top: 7px;
-    margin-bottom: 7px;
-    margin-left: 7px;
-    padding: 0;
-    float: left !important;
-}
-
 #swatch-button-left {
     float: right !important;
     margin-right: 7px;
+    border-radius: 20px;
+    font-size: medium;
+    font-weight: bold;
 }
 #swatch-button-right {
     float: left !important;
     margin-left: 7px;
+    border-radius: 17px;
+    font-size: medium;
+    font-weight: bold;
 }
 
 .swatch-title {
