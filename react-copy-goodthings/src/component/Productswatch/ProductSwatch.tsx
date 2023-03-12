@@ -14,12 +14,14 @@ import productswatch32 from "../../img/good-socks-2.webp";
 import productswatch33 from "../../img/good-tech-1.webp";
 import productswatch34 from "../../img/good-umbrellas-1.webp";
 import productswatch4 from "../../img/good-hats.webp";
+import { SwatchItemLarge } from "./SwatchitemLarge";
+import { SwatchItemSmall } from "./SwatchitemSmall";
 
 
 function ProductSwatchComponent() {
     return (
         <div>
-            <Container>
+            <Container className={styles['swatch-body']}>
                 <Row>
                     <h2 className={styles['swatch-title']}>
                         Our Brandable Products
@@ -28,84 +30,74 @@ function ProductSwatchComponent() {
 
                 <Row>
                     <Row>
-                        <Col xl="6">
-                            <div className={styles['container']}>
-                                <Image className={styles['image']} src={productswatch1} />
-                                <div className={styles['original-text-container']}>
-                                    <div className={styles['original-text']}>original-text</div>
-                                </div>
-                                <div className={styles['middle']}>
-                                    <div className={styles['hover-show-text']} >John Doe</div>
-                                </div>
-                            </div>
-                        </Col> 
+                    <SwatchItemLarge 
+                        imageurl={productswatch1}
+                        hyperlink="https://goodthings.com.au/product-category/stationery/"
+                        originaltext="good notepads"
+                        hovertext="Great for conferences and events" />
 
-                            {/* <a href="https://goodthings.com.au/product-category/stationery/">
-                                <Image id={styles['swatch-product-book']} src={productswatch1} />
-                            </a>
-                            <div className="middle">
-                                <div className="text">John Doe</div>
-                            </div> */}
-                        
                         <Col xl="6">
                             <Row>
-                                <Col>
-                                    <a href="https://goodthings.com.au/product-category/promotional-bags/">
-                                        <Image alt="bag" className={styles['swatch-product-s-left']} src={productswatch21} />
-                                    </a>
-                                </Col>
-                                <Col>
-                                    <a href="https://goodthings.com.au/product-category/promotional-bags/">
-                                        <Image alt="cloth" className={styles['swatch-product-s-right']} src={productswatch22} />
-                                    </a>
-                                </Col>
+                            <SwatchItemLarge 
+                        imageurl={productswatch21}
+                        hyperlink="https://goodthings.com.au/product-category/promotional-bags/"
+                        originaltext="good bags"
+                        hovertext="Eco-friendly, cost effective and stylish, we've got it all in the bag." />
+
+<SwatchItemLarge 
+                        imageurl={productswatch22}
+                        hyperlink="https://goodthings.com.au/product-category/clothing-apparel/"
+                        originaltext="good t-shirts"
+                        hovertext="Wear your brand on your sleeve for all your promotional and event needs." />
                             </Row>
                             <Row>
-                                <Col>
-                                    <a href="https://goodthings.com.au/product-category/promotional-bags/">
-                                        <Image alt="bottle" className={styles['swatch-product-s-left']} src={productswatch23} />
-                                    </a>
-                                </Col>
-                                <Col>
-                                    <a href="https://goodthings.com.au/product-category/promotional-bags/">
-                                        <Image className={styles['swatch-product-s-right']} src={productswatch24} />
-                                    </a>
-                                </Col>
+                            <SwatchItemLarge 
+                        imageurl={productswatch23}
+                        hyperlink="https://goodthings.com.au/product-category/drink-water-bottles/"
+                        originaltext="good bottles"
+                        hovertext="Your audience won't forget your brand, or to hydrate." />
+                          <SwatchItemLarge 
+                        imageurl={productswatch24}
+                        hyperlink="https://goodthings.com.au/product-category/promotional-pens/"
+                        originaltext="good pens"
+                        hovertext="Our personalised pens are something to write home about." />
                             </Row>
                         </Col>
                     </Row>
                     <Row>
                         <Col xl="6">
                             <Row>
-                                <Col>
-                                    <a href="https://goodthings.com.au/product-category/promotional-bags/">
-                                        <Image className={styles['swatch-product-s-left']} src={productswatch31} />
-                                    </a>
-                                </Col>
-                                <Col>
-                                    <a href="https://goodthings.com.au/product-category/promotional-bags/">
-                                        <Image className={styles['swatch-product-s-right']} src={productswatch32} />
-                                    </a>
-                                </Col>
+                            <SwatchItemLarge 
+                        imageurl={productswatch31}
+                        hyperlink="https://goodthings.com.au/product-category/clothing-apparel/"
+                        originaltext="good apparels"
+                        hovertext="When looking good matters" />
+                            <SwatchItemLarge 
+                        imageurl={productswatch32}
+                        hyperlink="https://goodthings.com.au/product-category/clothing-apparel/custom-socks/"
+                        originaltext="good socks"
+                        hovertext="Slip into our soft cotton (or wool) socks" />
                             </Row>
                             <Row>
-                                <Col>
-                                    <a href="https://goodthings.com.au/product-category/promotional-bags/">
-                                        <Image className={styles['swatch-product-s-left']} src={productswatch33} />
-                                    </a>
-                                </Col>
-                                <Col>
-                                    <a href="https://goodthings.com.au/product-category/promotional-bags/">
-                                        <Image className={styles['swatch-product-s-right']} src={productswatch34} />
-                                    </a>
-                                </Col>
+                            <SwatchItemLarge 
+                        imageurl={productswatch33}
+                        hyperlink="https://goodthings.com.au/product-category/technology/"
+                        originaltext="good tech"
+                        hovertext="Functional and useful technology" />
+                            <SwatchItemLarge 
+                        imageurl={productswatch34}
+                        hyperlink="https://goodthings.com.au/product-category/branded-umbrellas/"
+                        originaltext="good umbrellas"
+                        hovertext="Always be ready for a rainy day" />
                             </Row>
                         </Col>
-                        <Col xl="6" className={styles['swatch-product-col']}>
-                            <a href="https://goodthings.com.au/product-category/promotional-bags/">
-                                <Image id={styles['swatch-product-hat']} src={productswatch4} />
-                            </a>
-                        </Col>
+
+                        <SwatchItemLarge 
+                        imageurl={productswatch4}
+                        hyperlink="https://goodthings.com.au/product-category/caps-hats-clothing-apparel/"
+                        originaltext="good hats"
+                        hovertext="Promotional hats will cap-tivate your audience." />
+
                     </Row>
                 </Row>
 
