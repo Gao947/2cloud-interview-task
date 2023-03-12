@@ -47,6 +47,7 @@
     ]
   },
   "devDependencies": {
+    "keen-slider": "^6.8.5",
     "typescript-plugin-css-modules": "^4.2.2"
   }
 }

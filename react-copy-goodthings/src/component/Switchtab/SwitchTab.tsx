@@ -2,6 +2,10 @@ import { Container } from "react-bootstrap";
 import styles from "./SwitchTab.module.css";
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
+import { useKeenSlider } from 'keen-slider/react' 
+
+
+
 
 function SwitchTabComponent() {
   return (
