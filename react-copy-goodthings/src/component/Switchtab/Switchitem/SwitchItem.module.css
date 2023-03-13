@@ -1,6 +1,6 @@
 #switch-img-container {
     height: 280px;
-    width: 280px;
+    width: auto;
     background-color: white;
     position: relative;
     width: 100%;
@@ -32,7 +32,7 @@
 }
 
 #switch-product-name {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 700;
     position: relative;
     color: #3c4858;
@@ -46,7 +46,7 @@
     color: #7a7a7a;
     text-transform: lowercase;
     margin-right: 7px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     vertical-align: top; 
     font-weight: 600;
     opacity: .7;
@@ -58,21 +58,21 @@
 #switch-product-price {
     display: inline-block;
     color: #214fff;
-    font-size: 1.1rem;
+    font-size: 1rem;
     vertical-align: top;
     position: relative;
     top: 3px;
     font-weight: 800;
     text-transform: uppercase;
     line-height: 1.2;
-    max-width: 35%;
+    max-width: 30%;
 }
 
 #switch-product-quantity {
     display: inline-block;
     color: #7a7a7a;
     margin-right: 7px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     vertical-align: top; 
     font-weight: 600;
     opacity: .7;
