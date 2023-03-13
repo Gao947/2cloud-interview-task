@@ -1,17 +1,37 @@
 .footer-body {
     background-color:#99999b;;
-    padding: 100px;
+    padding: 50px;
     }
 
+.brand-logo {
+    width: 300px;
+    padding: 10px;
+}
+
 .footer-container {
-    font-size: 1.4rem;
-    border-top: 4px solid;
+    font-size: 1rem;
     background: #99999b;
     color: #fff;
 }
 
-#brand-logo {
-    max-width: 175px;
-    margin-top: 24px;
-    margin-bottom: 12px;
+#subtitle {
+text-transform: uppercase;
+font-size: 1.3rem;
+margin-bottom: 10px;
+}
+
+.href-text > div > div > a {
+    color: #fff!important;
+}
+
+.href-text > div > div > a:hover {
+    color: blue!important;
+}
+
+.button {
+    width: 140px;
+    letter-spacing: .05em;
+    background: #616367;
+    color: #fff;
+    font-size: medium;
 }

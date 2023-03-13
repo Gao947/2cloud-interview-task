@@ -10,19 +10,19 @@ function FooterComponent() {
             <Container className={styles['footer-container']}>
                 <Row>
                     <a href="https://goodthings.com.au/">
-                        <Image id='' src={brandlogo} />
+                        <Image className={styles['brand-logo']} id='' src={brandlogo} />
                     </a>
                 </Row>
                 <Row>
                     <Col lg="8">
                         <Row>
-                            <Col lg="8"><h3>Good things</h3></Col>
-                            <Col><h3>Help and Support</h3></Col>
+                            <Col lg="8"><span id={styles['subtitle']}>Good things</span></Col>
+                            <Col><span id={styles['subtitle']}>Help and Support</span></Col>
 
                         </Row>
-                        <Row>
+                        <Row className={styles['href-text']}>
                             <Col>
-                                <Row><a href="/about-us/">About Us</a></Row>
+                                <Row ><a href="/about-us/">About Us</a></Row>
                                 <Row><a href="/our-media/">In The Media</a></Row>
                                 <Row><a href="/blog/">Our Blog</a></Row>
                                 <Row><a href="/our-process/">Process</a></Row>
@@ -46,7 +46,7 @@ function FooterComponent() {
                         </Row>
                     </Col>
                     <Col>
-                        <Row><h3>Contact us</h3></Row>
+                        <Row><span id={styles['subtitle']}>Contact us</span></Row>
                         <Row>
                             <Form>
                             <Form.Group className="mb-3">
@@ -67,7 +67,7 @@ function FooterComponent() {
                                 <Form.Group className="mb-4" controlId="formBasicPassword">
                                     <Form.Control as="textarea" type="message" placeholder="Message" />
                                 </Form.Group>
-                                <Button variant="warning" type="submit">
+                                <Button className={styles['button']} type="submit">
                                     SEND
                                 </Button>
                             </Form>

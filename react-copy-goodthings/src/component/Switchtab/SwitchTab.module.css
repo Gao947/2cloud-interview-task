@@ -19,13 +19,6 @@
     font-weight: 600!important;
 }
 
-.switch-tab-text > li > button {
-    background-color: #e9e9e9!important;
-    color: #3c4858;
-    font-size: 1rem!important;
-    font-weight: 600!important;
-}
-
 .switch-tab-text > li > button:hover {
     background-color: #c9e990!important;
     color: #3c4858;
