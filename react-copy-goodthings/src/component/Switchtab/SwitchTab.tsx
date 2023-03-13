@@ -13,6 +13,7 @@ import lp5 from "../../img/LP5.webp";
 import lp6 from "../../img/LP6.webp";
 import lp7 from "../../img/LP7.webp";
 import lp8 from "../../img/LP8.webp";
+import { SwitchItem } from "./Switchitem";
 
 function SwitchTabComponent() {
 
@@ -34,7 +35,14 @@ function SwitchTabComponent() {
         <Tab eventKey="lastest" title="Latest Products">
         <div ref={sliderRef} className="keen-slider">
 
-<div className="keen-slider__slide number-slide1">
+<SwitchItem 
+    imgurl= {lp1}
+    name="NSW Touch Football Bilk Shorts"
+    price="31.8"
+    quantity="1"
+/>
+
+{/* <div className="keen-slider__slide">
 <Image id={styles['switch-img-container']} src={lp1} />
 <span id={styles['switch-img-tag']}>New arrival</span>
 <Row>
@@ -45,18 +53,18 @@ function SwitchTabComponent() {
 <span id={styles['switch-product-price']}>$31.8</span> 
 <span id={styles['switch-product-quantity']}>Min Qty: 1</span>
 </Row>
-</div>
-<div className="keen-slider__slide number-slide2">
+</div> */}
+<div className="keen-slider__slide">
 <Image id={styles['switch-img-container']} src={lp2} />
 <span>NSW Touch Football Bilk Shorts</span>
 <span>from$31.8</span> <span>Min Qty: 1</span>
 </div>
-<div className="keen-slider__slide number-slide3">
+<div className="keen-slider__slide">
 <Image id={styles['switch-img-container']} src={lp3} />
 <span>NSW Touch Football Bilk Shorts</span>
 <span>from$31.8</span> <span>Min Qty: 1</span>
 </div>
-<div className="keen-slider__slide number-slide4">
+<div className="keen-slider__slide">
 <Image id={styles['switch-img-container']} src={lp4} />
 <span>NSW Touch Football Bilk Shorts</span>
 <span>from$31.8</span> <span>Min Qty: 1</span>
