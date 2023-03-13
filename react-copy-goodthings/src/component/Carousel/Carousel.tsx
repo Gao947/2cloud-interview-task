@@ -19,7 +19,7 @@ function CarouselComponent() {
               src={carousel1}
               alt="First slide"
             />
-            <Carousel.Caption id={styles['first-slice-caption']}>
+            <Carousel.Caption id={styles['first-slice-caption']}> 
               <p>Australis's Favourite</p>
               <p>Brandable Products</p>
             </Carousel.Caption>

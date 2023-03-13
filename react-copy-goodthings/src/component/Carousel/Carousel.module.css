@@ -18,12 +18,13 @@
 
 #second-slice-caption {
     position: absolute !important;
-    left: 0px;
-    top: 160px;
+    left: 750px!important;
+    top: 140px;
     color: white;
     font-size: 2.8rem;
     line-height: 0.8;
     font-weight: bold;
+    text-align: left;
 }
 
 #second-slice-button {
@@ -40,13 +41,14 @@
 
 #third-slice-caption {
     position: absolute !important;
-    left: 0px;
-    top: 180px;
+    left: 600px!important;
+    top: 190px;
     color: black;
     text-align: center;
     font-size: 2.8rem;
     line-height: 0.8;
     font-weight: bold;
+    text-align: left;
 }
 
 #third-slice-button {
