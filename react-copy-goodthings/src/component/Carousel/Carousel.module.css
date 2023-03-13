@@ -33,6 +33,7 @@
     border: none;
     font-weight: bold;
     color: white;
+    font-size: medium;
 }
 
 #third-slide {
@@ -59,6 +60,7 @@
     font-weight: bold;
     color: white;
     text-align: center;
+    font-size: medium;
 }
 
 #fourth-slide {
