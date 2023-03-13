@@ -23,13 +23,14 @@ function SwitchTabComponent() {
   return (
     <div className={styles['swatch-tab-body']}>
       <Container>
-        <Tabs
-          defaultActiveKey="lastest"
+        <Tabs 
           className={styles['switch-tab-text']}
+          defaultActiveKey="lastest"
           fill
         >
-          <Tab eventKey="lastest" title="Latest Products">
-            <div ref={sliderRef} className="keen-slider">
+          <Tab  eventKey="lastest" title="Latest Products">
+            <div ref={sliderRef} className="keen-slider"> 
+            
               {productLPData.map((data) => {
                 return (
                   <SwitchItem
