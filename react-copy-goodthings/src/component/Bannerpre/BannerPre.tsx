@@ -1,4 +1,3 @@
-import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import styles from "./BannerPre.module.css";
 import { GlobeAsiaAustralia, Amd, Rocket, Lightbulb, Telephone } from 'react-bootstrap-icons';
@@ -7,7 +6,7 @@ import tracelogo from "../../img/trace-climate-positive.webp";
 
 function BannerPre() {
     return (
-        <div className={styles.bannerpre}>
+        <div className={styles["bannerpre"]}>
             <Container>
                 <Row className={styles["banner-text"]}>
                     <Col className={styles["banner-item"]}>
@@ -31,7 +30,7 @@ function BannerPre() {
                         About us
                     </Col>
                     <Col className={styles["banner-item"]}>
-                    <Image className={styles['trace-logo']} src={tracelogo} />
+                        <Image className={styles['trace-logo']} src={tracelogo} />
                     </Col>
                 </Row>
             </Container>

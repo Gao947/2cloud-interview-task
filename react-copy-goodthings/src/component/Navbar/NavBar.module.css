@@ -38,7 +38,7 @@
     background-color: #1532a5;
 }
 
-#menu-col-item-text>a {
+.menu-col-item-text>a {
     color: #fff;
     font-size: medium;
     font-weight: bold;
@@ -65,3 +65,4 @@
     font-size: 1.1rem;
     font-weight: bold;
 }
+

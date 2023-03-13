@@ -1,8 +1,8 @@
-import { Container, Row } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import styles from "./SwitchTab.module.css";
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
-import { useKeenSlider } from 'keen-slider/react' 
+import { useKeenSlider } from 'keen-slider/react'
 import Image from 'react-bootstrap/Image';
 import { SwitchItem } from "./Switchitem";
 import { productLPData } from "../../data/productsLP";
@@ -23,30 +23,35 @@ function SwitchTabComponent() {
   return (
     <div className={styles['swatch-tab-body']}>
       <Container>
-        <Tabs 
+        <Tabs
           className={styles['switch-tab-text']}
           defaultActiveKey="lastest"
           fill
         >
-          <Tab  eventKey="lastest" title="Latest Products">
-            <div ref={sliderRef} className="keen-slider"> 
-            
-              {productLPData.map((data) => {
-                return (
-                  <SwitchItem
-                    imgurl={data.imgurl}
-                    name={data.name}
-                    price={data.price}
-                    quantity={data.quantity}
-                  />
-                );
-             })
-              } 
+          <Tab eventKey="lastest" title="Latest Products">
+            <div ref={sliderRef} className="keen-slider">
+
+              <Row>
+
+                {productLPData.map((data) => {
+                  return (
+                    <Col lg="3" md="6" xs="12">
+                      <SwitchItem
+                        imgurl={data.imgurl}
+                        name={data.name}
+                        price={data.price}
+                        quantity={data.quantity}
+                      />
+                    </Col>
+                  );
+                })
+                }
+              </Row>
             </div>
           </Tab>
 
-        <Tab eventKey="sellers" title="Best Sellers">
-        <div ref={sliderRef} className="keen-slider">
+          <Tab eventKey="sellers" title="Best Sellers">
+            <div ref={sliderRef} className="keen-slider">
               {productBSData.map((data) => {
                 return (
                   <SwitchItem
@@ -56,13 +61,13 @@ function SwitchTabComponent() {
                     quantity={data.quantity}
                   />
                 );
-             })
-              } 
+              })
+              }
             </div>
-        </Tab>
+          </Tab>
 
-        <Tab eventKey="express" title="Express Products">
-        <div ref={sliderRef} className="keen-slider">
+          <Tab eventKey="express" title="Express Products">
+            <div ref={sliderRef} className="keen-slider">
               {productEPData.map((data) => {
                 return (
                   <SwitchItem
@@ -72,13 +77,13 @@ function SwitchTabComponent() {
                     quantity={data.quantity}
                   />
                 );
-             })
-              } 
+              })
+              }
             </div>
-        </Tab>
+          </Tab>
 
-        <Tab eventKey="clothing" title="Clothing & Apparel">
-        <div ref={sliderRef} className="keen-slider">
+          <Tab eventKey="clothing" title="Clothing & Apparel">
+            <div ref={sliderRef} className="keen-slider">
               {productCAData.map((data) => {
                 return (
                   <SwitchItem
@@ -88,13 +93,13 @@ function SwitchTabComponent() {
                     quantity={data.quantity}
                   />
                 );
-             })
-              } 
+              })
+              }
             </div>
-        </Tab>
+          </Tab>
 
-        <Tab eventKey="eco" title="Eco Friendly">
-        <div ref={sliderRef} className="keen-slider">
+          <Tab eventKey="eco" title="Eco Friendly">
+            <div ref={sliderRef} className="keen-slider">
               {productEFData.map((data) => {
                 return (
                   <SwitchItem
@@ -104,12 +109,12 @@ function SwitchTabComponent() {
                     quantity={data.quantity}
                   />
                 );
-             })
-              } 
+              })
+              }
             </div>
-        </Tab>
-      </Tabs>
-    </Container>
+          </Tab>
+        </Tabs>
+      </Container>
     </div>
   )
 }
