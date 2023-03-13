@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import { Button, Col, Dropdown, Row } from "react-bootstrap";
 import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import styles from "./NavBar.module.css";
-// import { Arrow90degRight }from 'react-bootstrap-icons';
 
 function NavBar() {
     const [showAllProductDropdown, setShowAllProductDropdown] = useState(false);
@@ -18,7 +16,11 @@ function NavBar() {
 
     return (
         <div>
-            <Navbar className={styles['navbar']}>
+            <Navbar
+                className={styles['navbar']}
+                collapseOnSelect
+                expand="lg"
+            >
                 <Container>
                     <NavDropdown
                         title="All products"
@@ -136,7 +138,6 @@ function NavBar() {
                     <Dropdown
                         onMouseLeave={() => setShowContactUsDropdown(false)}
                         onMouseOver={() => setShowContactUsDropdown(true)}
-                        style={{ width: '50px' }}
                     >
                         <Dropdown.Toggle
                             className="main-style"
@@ -145,20 +146,20 @@ function NavBar() {
                             Contact us
                         </Dropdown.Toggle>
 
-                        <Dropdown.Menu show={showContactUsDropdown}>
-<Container id={styles['contact-item']}>
-    <Button id={styles['contact-button']}>Email us</Button>
-                            <Dropdown.Item href="#/action-1" id={styles['contact-text']}>
-                            <p>Please note most of our <br />
-                                products have a minimum qty of <br />
-                                20+ units. If you'd like to chat <br />
-                                call:
-                                </p>
-                            <a href="#/action-1"> 1800 659 649 </a>
-                            <p>For assistance with your order, <br />
-                            select Option 2.
-                            </p>
-                            </Dropdown.Item>
+                        <Dropdown.Menu show={showContactUsDropdown} id={styles['contact-dropdown-menu']}>
+                            <Container id={styles['contact-item']}>
+                                <Button id={styles['contact-button']}>Email us</Button>
+                                <Dropdown.Item href="#/action-1" id={styles['contact-text']}>
+                                    <p>Please note most of our <br />
+                                        products have a minimum qty of <br />
+                                        20+ units. If you'd like to chat <br />
+                                        call:
+                                    </p>
+                                    <a href="#/action-1"> 1800 659 649 </a>
+                                    <p>For assistance with your order, <br />
+                                        select Option 2.
+                                    </p>
+                                </Dropdown.Item>
                             </Container>
                         </Dropdown.Menu>
                     </Dropdown>

@@ -4,14 +4,14 @@
 
 #navbar-item {
     background-color: #99999b;
-    color: white!important;
+    color: white !important;
     text-transform: uppercase;
     font-weight: bold;
 }
 
 #navbar-item:hover {
     background-color: #1532a5;
-    color: white!important;
+    color: white !important;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -38,7 +38,7 @@
     background-color: #1532a5;
 }
 
-#menu-col-item-text > a {
+#menu-col-item-text>a {
     color: #fff;
     font-size: medium;
     font-weight: bold;
@@ -47,21 +47,21 @@
 #contact-button {
     background-color: #f09b12;
     text-transform: uppercase;
-    border-radius: 17px;        
+    border-radius: 17px;
     border: none;
     font-weight: bold;
-    color: white;        
+    color: white;
     font-size: medium;
     width: 300px;
     margin-left: 15px;
     margin-top: 25px;
 }
 
-#contact-item{
+#contact-item {
     width: 350px
 }
 
 #contact-text {
-    font-size:1.1rem;
+    font-size: 1.1rem;
     font-weight: bold;
 }
