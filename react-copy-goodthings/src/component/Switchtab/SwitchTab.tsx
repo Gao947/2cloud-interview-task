@@ -24,8 +24,9 @@ function SwitchTabComponent() {
     <div className={styles['swatch-tab-body']}>
       <Container>
         <Tabs
-          defaultActiveKey="profile"
+          defaultActiveKey="lastest"
           className={styles['switch-tab-text']}
+          fill
         >
           <Tab eventKey="lastest" title="Latest Products">
             <div ref={sliderRef} className="keen-slider">
