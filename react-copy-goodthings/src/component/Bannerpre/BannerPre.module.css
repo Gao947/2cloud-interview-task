@@ -1,21 +1,30 @@
 .banner-item {
-    margin-right: 50px;
+    margin-right: 10px;
 }
 
 .bannerpre {
     background-color: #e7e7e8;
-    padding: 12px 0 11px;
+    padding: 5px 0 5px;
 }
 
 .banner-text {
-    margin-top: 7px;
-    font-size: 1em;
+    margin-top: 20px;
+    font-size: 0.8em;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.8px;
+    letter-spacing: 0.3px; 
+    text-align: center;
+    line-height: 40px;
 }
 
 .banner-icon {
     color: blue;
     margin-right: 8px;
+}
+
+.trace-logo {
+    display:inline-block;
+    width: 120px;
+    vertical-align: middle;
+    border-style: none;
 }
